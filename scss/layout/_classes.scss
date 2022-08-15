@@ -28,20 +28,25 @@ p {
  font-size: rem(14);
  max-width: 39ch;
 }
-button {
- background-color: var(--button-bg);
- color: white;
- font-size: var(--main-fs);
- font-weight: 700;
+.btn {
  width: 100%;
- padding: rem(15) 0;
- border-radius: 7px;
- font-family: var(--main-font);
- box-shadow: 6px 6px 10px hsl(178.2, 52%, 38.4%);
- text-transform: capitalize;
- transition: all 0.5s ease-in-out;
- &:hover {
-  box-shadow: 12px 12px 10px hsl(178.2, 52%, 38.4%);
-  opacity: 0.9;
+ a {
+  text-align: center;
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: white;
+  font-size: var(--main-fs);
+  font-weight: 700;
+  width: 100%;
+  padding: rem(15) 0;
+  border-radius: 7px;
+  font-family: var(--main-font);
+  box-shadow: 6px 6px 10px hsl(178.2, 52%, 38.4%);
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+   box-shadow: 12px 12px 10px hsl(178.2, 52%, 38.4%);
+   opacity: 0.9;
+  }
  }
 }
