@@ -1,0 +1,25 @@
+@use "../utilties" as *;
+@include breakpoint-up("medium") {
+ main {
+  margin-bottom: rem(0);
+ }
+ .grid {
+  grid-template-columns: 1fr 1fr;
+  .card-1 {
+   grid-area: 1 / 1 / span 1 / span 3;
+   width: 100%;
+   p {
+    max-width: 60ch;
+   }
+  }
+  .card-2 {
+   border-bottom-left-radius: 7px;
+  }
+  .card-3 {
+   border-bottom-left-radius: 0;
+   ul {
+    row-gap: rem(6);
+   }
+  }
+ }
+}

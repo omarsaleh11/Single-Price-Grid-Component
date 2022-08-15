@@ -1,0 +1,19 @@
+@use "./functions" as f;
+:root {
+ // Primary
+ --bg-clr: hsl(206, 47%, 93%);
+ --card-1-bg: hsl(0, 0%, 100%);
+ --card-2-bg: hsl(179, 62%, 43%);
+ --card-3-bg: hsl(179, 47%, 52%);
+ --button-bg: hsl(71, 73%, 54%);
+ --h1: hsl(178.3, 44%, 46%);
+
+ //  Neutral
+
+ --pragraph: hsl(218, 22%, 67%);
+ --card-clr: hsl(204, 43%, 93%);
+
+ // font
+ --main-font: "Karla", sans-serif;
+ --main-fs: f.rem(16);
+}

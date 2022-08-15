@@ -1,0 +1,67 @@
+@use "../utilties" as *;
+main {
+ display: grid;
+ justify-items: center;
+ height: 100%;
+ padding: rem(30) rem(20);
+ margin-bottom: rem(40);
+ align-items: center;
+}
+.grid {
+ display: grid;
+ &__card {
+  padding: rem(35);
+  padding-left: rem(24);
+ }
+ .card-1 {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: var(--card-1-bg);
+ }
+ .card-2 {
+  background-color: var(--card-2-bg);
+  h2,
+  h4,
+  h5,
+  span {
+   color: white;
+   margin: rem(10) 0;
+  }
+  h2 {
+   font-size: rem(18);
+  }
+  h4 {
+   font-size: rem(16);
+   font-weight: 400;
+   color: var(--bg-clr);
+   display: flex;
+   align-items: center;
+  }
+  span {
+   font-weight: 700;
+   font-size: rem(45);
+   margin-right: rem(10);
+  }
+  h5 {
+   font-size: rem(16);
+   font-weight: 400;
+   margin-bottom: rem(30);
+  }
+ }
+ .card-3 {
+  background-color: var(--card-3-bg);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  h2 {
+   color: white;
+   font-size: rem(20);
+  }
+  ul {
+   color: var(--bg-clr);
+   display: grid;
+   row-gap: rem(3);
+   font-weight: 400;
+   font-size: var(--main-fs);
+  }
+ }
+}

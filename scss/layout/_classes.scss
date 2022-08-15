@@ -1,0 +1,47 @@
+@use "../utilties" as *;
+body {
+ color: var(--Very-Dark-Blue);
+ font-size: var(--main-fs);
+ font-weight: 400;
+ font-family: var(--main-font);
+ background-color: var(--bg-clr);
+ height: 100%;
+}
+h1 {
+ font-size: rem(24);
+ font-weight: 700;
+ line-height: 1.5;
+ color: var(--h1);
+ letter-spacing: -0.6px;
+}
+
+h2 {
+ font-size: rem(16);
+ color: var(--button-bg);
+ line-height: 1.5;
+ margin: rem(10) 0;
+}
+
+p {
+ line-height: 1.5;
+ color: var(--pragraph);
+ font-size: rem(14);
+ max-width: 39ch;
+}
+button {
+ background-color: var(--button-bg);
+ color: white;
+ font-size: var(--main-fs);
+ font-weight: 700;
+ width: 100%;
+ padding: rem(15) 0;
+ border-radius: 7px;
+ font-family: var(--main-font);
+ box-shadow: 6px 6px 10px hsl(178.2, 52%, 38.4%);
+ text-transform: capitalize;
+ transition: all 0.5s ease-in-out;
+ &:hover {
+  box-shadow: 12px 12px 10px hsl(178.2, 52%, 38.4%);
+  opacity: 0.9;
+ }
+}
